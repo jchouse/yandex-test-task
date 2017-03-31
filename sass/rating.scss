@@ -1,0 +1,68 @@
+@mixin rating($height, $width, $star-active-image, $star-inactive-image, $star-hover-image) {
+    
+    .rating-control {
+        border: none;
+        float: left;
+
+        label {
+            margin: 0; padding: 0;            
+            height: $height;
+            width: $width;
+        }
+        
+        & > input { 
+            display: none; 
+        } 
+        & > label:before {
+            margin: 5px;
+            font-size: 1.25em;
+            display: inline-block;
+        }
+
+        & > .half:before { 
+            position: absolute;
+        }
+
+        & > label {            
+            background: $star-inactive-image; 
+            float: right;            
+        }
+
+        & > label:hover {
+            cursor: pointer;
+        }
+
+        /***** CSS Magic to Highlight Stars on Hover *****/
+
+        & > input:checked ~ label, /* show gold star when clicked */
+        &:not(:checked) > label:hover, /* hover current star */
+        &:not(:checked) > label:hover ~ label { 
+            background: $star-active-image;
+        } /* hover previous stars in list */
+
+        & > input:checked + label:hover, /* hover current star when changing rating */
+        & > input:checked ~ label:hover,
+        & > label:hover ~ input:checked ~ label, /* lighten current selection */
+        & > input:checked ~ label:hover ~ label { 
+            background: $star-hover-image; 
+        } 
+    }
+}
+
+.rating-container {    
+    $rating-star-active-image: url("images/star_active.png") no-repeat center/contain;
+    $rating-star-inactive-image: url("images/star_inactive.png") no-repeat center/contain;
+    $rating-star-hover-image: url("images/star_hover.png") no-repeat center/contain;
+    $rating-width: 20px;
+    $rating-height: 20px;
+    
+    width: 100%;
+    height: 50px;
+    @include rating(
+        $rating-height,
+        $rating-width,        
+        $rating-star-active-image,        
+        $rating-star-inactive-image,
+        $rating-star-hover-image
+    );
+}
