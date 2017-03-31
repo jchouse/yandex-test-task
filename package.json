@@ -1,0 +1,26 @@
+{
+  "name": "markup_test",
+  "version": "1.0.0",
+  "description": "Тестовое задание для верстальщика\r ---------------------------------\r 1. Напишите небольшой текст на важную для вас тему, связанную с профессией. Сверстайте его в начале задания.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jchouse/test-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jchouse/test-task/issues"
+  },
+  "homepage": "https://github.com/jchouse/test-task#readme",
+  "dependencies": {
+    "npm-sass": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
