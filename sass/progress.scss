@@ -20,11 +20,12 @@
     $height: 20px;
     $progresbar_class: custom-progress_meter;
     $container_class: custom-progress;    
-    $container-bg: #2f2f2f;
-    $bar-bg: linear-gradient(45deg, rgba(255,255,255,0.2) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 0), rgb(170, 204, 0);
+    $container-bg: transparent;
+    $bar-bg:  linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%);
 
+    box-shadow:  0px 1px 5px 0px #777 inset;
     background: $container-bg;    
-    border-radius: $border-radius;
+    border-radius: $border-radius + 2px;
     height: $height;
     width: $witdh;
     padding: 5px;
