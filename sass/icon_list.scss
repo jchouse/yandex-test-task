@@ -1,0 +1,124 @@
+.icon-list  {    
+    $icon-size: 64px;
+
+    width: 600px;
+    padding: 0;
+    height: $icon-size;
+
+    @mixin browser-bg($name) {
+        background-color: transparent;
+        background: url("images/browser-#{$name}.png") no-repeat center/contain;
+    }
+
+    ul {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+    }
+
+    & > span {
+        text-align: center; 
+        width: $icon-size;
+    }
+
+    img {                
+        width: 0;
+        height: 0;
+        visibility: none;
+    }
+
+    img {
+        height: 0;
+        width: 0;
+        
+    }
+
+    img[alt]::before,
+    img[alt]::after  {  
+        width: $icon-size;
+        height: $icon-size;
+        position: absolute;
+        text-align: center;
+        margin-top: $icon-size/3;
+        top: 220px;
+    }
+
+    .opera[alt]::before {
+        color: red;
+    }
+
+    .safari[alt]::before {
+        color: gray;
+    }
+
+    .firefox[alt]::before {
+        color: orange;
+    }
+
+    .ie[alt]::before {
+        color: blue;
+    }
+
+    .chrome[alt]:before {  
+        margin-left: -20px;
+        color: green;
+        content: 'Ch';
+    }
+
+    .chrome2[alt]:before {
+        content: 'ro';
+        color: red;
+        margin-left: -3px;
+    }
+
+    .chrome[alt]::after {
+        content: 'me';
+        color: yellow;
+        margin-left: 14px;
+    }
+
+    img[alt]::before {
+        content: attr(alt);
+    }
+
+    img[alt] {
+        width: 0;
+        height: 0;
+        content: 'er';
+        position: absolute;
+        top: -100px;
+    }
+
+    li {        
+        float: left;
+    }
+
+    li:last-child {
+        float: right;
+    }
+
+    span {        
+        line-height: $icon-size; 
+    }
+
+    .icon_container, .icon_image{
+        height: $icon-size;
+        width: $icon-size;
+    }
+
+    .icon_browser-chrome {
+        @include browser-bg("chrome");
+    }
+    .icon_browser-firefox {
+        @include browser-bg("firefox");
+    }
+    .icon_browser-opera {
+         @include browser-bg("opera");
+    }
+   .icon_browser-safari {
+         @include browser-bg("safari");
+    }
+    .icon_browser-ie {
+         @include browser-bg("ie");
+    }
+}
