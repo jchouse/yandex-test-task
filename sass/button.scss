@@ -9,25 +9,18 @@
     ) {
 
     border-radius: $radius;
-    padding: 0 10px;
     background-clip: padding-box;
     outline: none;    
     border: none;    
     position: relative;
+    
+    background: $background-gradient;
 
     &:active {
-
-    }
-
-    &--default {
-        background: $background-gradient;
-    }
-
-    &--default:active {
         background: $background-gradient-active;
     }    
 
-    &--default::after {    
+    &::after {    
         background: $border-gradient;
         content: '';
         z-index: -1;
@@ -37,19 +30,21 @@
         left: -$border-size; right: -$border-size;
     }
 
-    &--default:active::after {
+    &:active::after {
         background: $border-gradient-active;
     }
 
 }
 
-.custom-button {        
+.custom_button {
     $button-radius: 5px;
     $button-background-gradient: linear-gradient(#f2f2f2, #e2e2e2);
     $button-border-gradient: linear-gradient(to bottom, #e5e5e5,  #a8a8a8);
-    $button-border-gradient-active: linear-gradient(to bottom, #959595,  #a8a8a8);
+    $button-border-gradient-active: linear-gradient(to bottom, #959595,  #e2e2e2);
     $button-border-size: 1px;
     
+    padding: 0 20px;
+
     @include custom_button(
         $button-radius,
         $button-border-size,
