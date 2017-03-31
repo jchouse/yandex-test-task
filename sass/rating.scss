@@ -32,17 +32,15 @@
             cursor: pointer;
         }
 
-        /***** CSS Magic to Highlight Stars on Hover *****/
-
-        & > input:checked ~ label, /* show gold star when clicked */
-        &:not(:checked) > label:hover, /* hover current star */
+        & > input:checked ~ label,
+        &:not(:checked) > label:hover,
         &:not(:checked) > label:hover ~ label { 
             background: $star-active-image;
-        } /* hover previous stars in list */
+        }
 
-        & > input:checked + label:hover, /* hover current star when changing rating */
+        & > input:checked + label:hover,
         & > input:checked ~ label:hover,
-        & > label:hover ~ input:checked ~ label, /* lighten current selection */
+        & > label:hover ~ input:checked ~ label,
         & > input:checked ~ label:hover ~ label { 
             background: $star-hover-image; 
         } 
@@ -55,7 +53,7 @@
     $rating-star-hover-image: url("images/star_hover.png") no-repeat center/contain;
     $rating-width: 20px;
     $rating-height: 20px;
-    
+
     width: 100%;
     height: 50px;
     @include rating(
