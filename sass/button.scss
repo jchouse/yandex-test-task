@@ -1,0 +1,62 @@
+
+@mixin custom_button(
+        $radius, 
+        $border-size, 
+        $background-gradient, 
+        $background-gradient-active, 
+        $border-gradient, 
+        $border-gradient-active
+    ) {
+
+    border-radius: $radius;
+    padding: 0 10px;
+    background-clip: padding-box;
+    outline: none;    
+    border: none;    
+    position: relative;
+
+    &:active {
+
+    }
+
+    &--default {
+        background: $background-gradient;
+    }
+
+    &--default:active {
+        background: $background-gradient-active;
+    }    
+
+    &--default::after {    
+        background: $border-gradient;
+        content: '';
+        z-index: -1;
+        border-radius: $radius + 1;         
+        position: absolute;
+        top: -$border-size; bottom: -$border-size;
+        left: -$border-size; right: -$border-size;
+    }
+
+    &--default:active::after {
+        background: $border-gradient-active;
+    }
+
+}
+
+.custom-button {        
+    $button-radius: 5px;
+    $button-background-gradient: linear-gradient(#f2f2f2, #e2e2e2);
+    $button-border-gradient: linear-gradient(to bottom, #e5e5e5,  #a8a8a8);
+    $button-border-gradient-active: linear-gradient(to bottom, #959595,  #a8a8a8);
+    $button-border-size: 1px;
+    
+    @include custom_button(
+        $button-radius,
+        $button-border-size,
+        $button-background-gradient,
+        $button-border-gradient-active,
+        $button-border-gradient,
+        $button-border-gradient-active
+    );
+}
+
