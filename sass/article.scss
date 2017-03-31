@@ -1,0 +1,28 @@
+.text_article{
+    width: 40%;
+    font-family: Arial, sans-serif;
+    margin: 1em;
+
+    section {
+        column-count: 2;        
+        padding-top: 1em;
+    }
+
+    section p {        
+        margin: 0 1em 1em 0;
+        text-indent: 1em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul li::before {
+        content: '- ';
+    }
+
+    .dashed {
+        text-decoration: underline dashed black;
+        color: gray;
+    }
+ }

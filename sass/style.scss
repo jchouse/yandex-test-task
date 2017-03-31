@@ -1,5 +1,12 @@
-
 @import 'button';
 @import 'rating';
 @import 'progress';
 @import 'icon_list';
+@import 'article';
+
+html,
+head {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
