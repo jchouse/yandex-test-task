@@ -1,0 +1,39 @@
+div.meter {
+    height: 25px;
+    border: 1px solid #b0b0b0;
+    box-shadow: inset 0 3px 5px 0 #d3d0d0;
+    border-radius: 20px;
+}
+div.meter span {
+    display: block;
+    height: 100%;
+    margin-top: -1px;
+    margin-left: -1px;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid #006837;
+    background: #00AD5F;
+
+}
+div.meter span:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.03);
+}
+div.meter p {
+    margin: -25px auto 0;
+    line-height: 25px;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+    z-index: 100;
+    text-align: center;
+}
+
