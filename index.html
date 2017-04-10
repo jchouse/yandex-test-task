@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test-task</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" />
+</head>
+<body>
+  <h1>Тестовое задание для верстальщика</h1>
+  <ol>
+    <li>
+      <p>
+        Напишите небольшой текст на важную для вас тему, связанную с профессией.
+        Сверстайте его в начале задания.
+      </p>
+    </li>
+    <li>
+      <p>Сверстайте контрол оценки и показа рейтинга</p>
+      <img src="http://img-fotki.yandex.ru/get/5823/2776.b/0_6060e_563c9f40_orig" alt="">
+      <p>
+        Практически все наши контролы должны быть очень гибкими к окружающему пространству,
+        должны уметь располагаться на любом фоне и при желании легко менять свой "скин".
+        Учитывайте это в этом и других заданиях. Обратите внимание,
+        что контрол должен не только выставлять оценку, но и показывать текущую.
+      </p>
+
+      <div>
+        <form class="rating">
+          <input type="radio" name="star" id="star-5">
+          <label for="star-5">☆</label>
+          <input type="radio" name="star" id="star-4">
+          <label for="star-4">☆</label>
+          <input type="radio" name="star" id="star-3">
+          <label for="star-3">☆</label>
+          <input type="radio" name="star" id="star-2">
+          <label for="star-2">☆</label>
+          <input type="radio" name="star" id="star-1">
+          <label for="star-1">☆</label>
+        </form>
+      </div>
+
+      <div>
+        <form class="rating lightblue">
+          <input type="radio" name="star1" id="star1-5">
+          <label for="star1-5">☆</label>
+          <input type="radio" name="star1" id="star1-4">
+          <label for="star1-4">☆</label>
+          <input type="radio" name="star1" id="star1-3">
+          <label for="star1-3">☆</label>
+          <input type="radio" name="star1" id="star1-2">
+          <label for="star1-2">☆</label>
+          <input type="radio" name="star1" id="star1-1">
+          <label for="star1-1">☆</label>
+        </form>
+
+      </div>
+    </li>
+    <li>
+      <p>Сверстайте прогресс-бар</p>
+      <div>
+        <img src="http://img-fotki.yandex.ru/get/5823/2776.b/0_6060f_caaf4030_orig" alt="">
+      </div>
+      <div style="width: 33%">
+        <div class="progress" data-progress="20%">
+          <span style="width: 20%;"></span>
+        </div>
+      </div>
+    </li>
+    <li>
+      <p>Сверстайте кнопку</p>
+      <img src="http://img-fotki.yandex.ru/get/5823/2776.b/0_60610_bddadf78_orig" alt="">
+      <p>
+        Пожалуйста, учитывайте, что эта кнопка должна быть кнопкой-на-все-случаи-жизни.
+        Сделайте несколько примеров кнопки в различном окружении и различном html-представлении.
+      </p>
+      <p>
+        <button type="button" class="button">Кнопка</button>
+        <br/>
+        <input type="button" class="button" value="Кнопка"/>
+        <br/>
+        <a href="#" class="button">Кнопка</a>
+        <br/>
+        <button type="button" class="button button-block">Кнопка</button>
+      </p>
+    </li>
+    <li>
+      <p>Сверстайте список из иконок</p>
+      <img onerror="this.style.display='none'" src="http://img-fotki.yandex.ru/get/5413/2776.b/0_60611_e7b6ded5_orig" alt="">
+      <img src="http://img-fotki.yandex.ru/get/4423/2776.b/0_60612_591746c9_orig" alt="">
+      <p>
+        Список должен занимать всю ширину родителя,
+        расстояние между последней иконкой и предпоследней должно занимать все свободное пространство.
+        Иконки должны быть прозрачными (png24).
+        В случае если пользователь отключил картинки или они по какой-то причине не загрузились,
+        интерфейс должен отреагировать на это оформленным текстом.
+      </p>
+      <div class="browsers clearfix">
+
+        <div class="browser chrome">
+          <div class="browser-icon">
+            <img src="/static/browsers/chrome.png" alt="" />
+          </div>
+          <div class="browser__alt">
+            <span>ro</span>
+          </div>
+        </div>
+
+        <div class="browser firefox">
+          <div class="browser-icon">
+            <img src="/static/browsers/firefox.png" alt="" />
+          </div>
+          <div class="browser__alt">
+            <span>Firefox</span>
+          </div>
+        </div>
+
+        <div class="browser opera">
+          <div class="browser-icon">
+            <img src="/static/browsers/opera.png" alt="" />
+          </div>
+          <div class="browser__alt">
+            <span>Opera</span>
+          </div>
+        </div>
+
+        <div class="browser safari">
+          <div class="browser-icon">
+            <img src="/static/browsers/safari.png" alt="" />
+          </div>
+          <div class="browser__alt">
+            <span>Safari</span>
+          </div>
+        </div>
+
+        <div class="browser ie">
+          <div class="browser-icon">
+            <img src="/static/browsers/ie.png" alt="" />
+          </div>
+          <div class="browser__alt">
+            <span>Internet Explorer</span>
+          </div>
+        </div>
+
+      </div>
+    </li>
+    <li>
+      <p>Сверстайте текст</p>
+      <img src="http://img-fotki.yandex.ru/get/4714/2776.b/0_60613_ce753157_orig" alt="">
+
+      <div class="article">
+        <div class="row clearfix">
+          <div class="col">
+            <h1>Тема: «Сюжетный анапест:
+              основные моменты»</h1>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <div class="col">
+            <p>
+              Нельзя восстановить истинной хронологической последовательности событий, потому что мелькание мыслей параллельно. Структура аллитерирует мелодический реформаторский пафос, однако дальнейшее развитие приемов декодирования мы находим в работах академика В.Виноградова. Аллюзия наблюдаема. Аллитерация, как бы это ни казалось парадоксальным, параллельна. Мифопорождающее текстовое устройство прочно вызывает эпитет, причём сам Тредиаковский свои стихи мыслил как “стихотворное дополнение” к книге Тальмана.
+            </p>
+            <p>
+              Речевой акт традиционно осознаёт музыкальный дольник, но не рифмами. Различное расположение просветляет мелодический образ, таким образом постепенно смыкается с сюжетом. Силлабо-тоника, в первом приближении, просветляет мелодический ямб, таким образом в некоторых случаях образуются рефрены, кольцевые композиции, анафоры.
+            </p>
+          </div>
+
+          <div class="col">
+            <p>Представленный лексико-семантический анализ является психолингвистическим в своей основе, но мифопорождающее текстовое устройство аллитерирует мифологический генезис свободного стиха, об этом свидетельствуют краткость и завершенность формы, бессюжетность, своеобразие тематического развертывания.</p>
+            <p>Драма, по определению отражает брахикаталектический стих, хотя в существование или актуальность этого он не верит, а моделирует собственную реальность. Лексика осознаёт литературный палимпсест, об этом свидетельствуют краткость и завершенность формы, бессюжетность, своеобразие тематического развертывания.</p>
+            <ul>
+              <li>
+                <span>Курит ли трупка мой</span>
+              </li>
+              <li>
+                <a href="#">из трупка тфой пихтишь</a>
+              </li>
+              <li class="dashed">
+                <span>Или мой кафе пил</span>
+              </li>
+              <li>
+                <span>тфой в щашешка сидишь</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </li>
+  </ol>
+
+</body>
+</html>

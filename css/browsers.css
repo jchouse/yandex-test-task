@@ -1,0 +1,104 @@
+.browsers {}
+
+.browsers .browser {
+  float: left;
+  width: 126px;
+  height: 126px;
+  overflow: hidden;
+}
+
+.browsers .browser:last-child {
+  float: right;
+}
+
+.browsers .browser .browser-icon {}
+
+.browsers .browser .browser__alt {
+  font-size: 0;
+  height: 100%;
+  line-height: 1;
+  text-align: center;
+}
+
+.browsers .browser .browser__alt:before,
+.browsers .browser .browser__alt span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.browsers .browser .browser__alt:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  margin-left: -1px;
+}
+
+.browsers .browser .browser__alt span {
+  font-size: 15px;
+  text-align: left;
+}
+
+/**
+  Chrome
+ */
+.browsers .browser.chrome .browser-icon {
+  background-position: 0 0;
+}
+
+.browsers .browser.chrome .browser__alt span:before,
+.browsers .browser.chrome .browser__alt span,
+.browsers .browser.chrome .browser__alt span:after {
+  font-size: 14px;
+}
+
+.browsers .browser.chrome .browser__alt span:before {
+  content: 'Ch';
+  color: #49a23a;
+}
+.browsers .browser.chrome .browser__alt span {
+  color: #d93734;
+}
+.browsers .browser.chrome .browser__alt span:after {
+  content: 'me';
+  color: #fdd54b;
+}
+
+/**
+  Firefox
+ */
+.browsers .browser.firefox .browser-icon {
+  background-position: -126px 0;
+}
+.browsers .browser.firefox .browser__alt span {
+  color: #f9a445;
+}
+
+/**
+  Opera
+ */
+.browsers .browser.opera .browser-icon {
+  background-position: -252px 0;
+}
+.browsers .browser.opera .browser__alt span {
+  color: #c93230;
+}
+
+/**
+  Safari
+ */
+.browsers .browser.safari .browser-icon {
+  background-position: -378px 0;
+}
+.browsers .browser.safari .browser__alt span {
+  color: #646464;
+}
+
+/**
+  Internet Explorer
+ */
+.browsers .browser.ie .browser-icon {
+  background-position: -504px 0;
+}
+.browsers .browser.ie .browser__alt span {
+  color: #096ea0;
+}

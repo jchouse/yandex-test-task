@@ -1,0 +1,50 @@
+.article {
+  font-family: 'PT Sans', Verdana, sans-serif;
+}
+
+.article .col {
+  width: 50%;
+  padding: 0 100px 0 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+.article h1,
+.article p {
+  margin: 0 0 30px;
+}
+
+.article h1 {
+  font-size: 24px;
+}
+
+.article p,
+.article ul {
+  font-size: 16px;
+}
+
+.article ul {
+  list-style: none;
+  padding: 0;
+}
+
+.article ul li {
+  position: relative;
+}
+
+.article ul li:before {
+  content: '—';
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  margin-right: 0.2em;
+}
+
+.article li a {
+  color: #0070ed;
+}
+
+.article li.dashed span {
+  color: #353434;
+  border-bottom: 1px dashed #353434;
+}

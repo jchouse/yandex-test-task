@@ -1,0 +1,26 @@
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+
+.lightblue.rating label,
+.lightblue.rating:hover input[type="radio"]:checked ~ label {
+  color: lightblue;
+}
+.lightblue.rating:hover input[type="radio"]:hover ~ label,
+.lightblue.rating input[type="radio"]:checked ~ label {
+  color: deepskyblue;
+}
+
+.button {
+  margin: 6px 0;
+}
