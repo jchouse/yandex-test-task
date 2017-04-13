@@ -9,6 +9,10 @@ body {
     a:active {
         color: $color-link;
     }
+
+    hr {
+        width: 100%;
+    }
 }
 
 .grid {

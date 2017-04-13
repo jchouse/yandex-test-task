@@ -1,0 +1,24 @@
+.personal {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    img {
+        margin: -$grid-step 0 0 -#{$grid-step};
+    }
+
+    .personal-title {
+        flex-shrink: 0;
+        font-size: $font-size-l;
+        background: $color-white;
+        max-width: 25%;
+        margin: $grid-step * 3 $grid-step * 3 0 -#{$grid-step * 9};
+        background: $color-text;
+        color: $color-white;
+        padding: $grid-step;
+    }
+
+    .personal-text {
+        margin: $grid-step * 9 0 0 -#{$grid-step * 5};
+    }
+}
