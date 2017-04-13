@@ -1,5 +1,21 @@
 .rate {
     input {
         display: none;
+
+        &:checked ~ label {
+            color: $color-star-checked;
+        }
+    }
+
+    label {
+        float: right;
+        color: $color-star-unchecked;
+        cursor: pointer;
+
+        &:before {
+            content: "★";
+            font-size: $font-size-l;
+            display: inline-block;
+        }
     }
 }
