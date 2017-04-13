@@ -1,0 +1,40 @@
+.article {
+    .article-title {
+        font-size: $font-size-l;
+    }
+    .article-body {
+        line-height: 1.3;
+
+        p {
+            text-indent: $font-size-m;
+            margin: $font-size-m 0;
+        }
+
+        .article-list {
+            padding: 0;
+            margin: $font-size-m 0;
+
+            li:before {
+                content: "—";
+            }
+        }
+    }
+
+    &[class$="-cols"] {
+        .article-body {
+            column-gap: $article-column-gap;
+        }
+    }
+
+    &.__2-cols {
+        .article-title {
+            width: 50%;
+        }
+        .article-body {
+            column-count: 2;
+        }
+        .article-list {
+            margin-left: -$font-size-s;
+        }
+    }
+}

@@ -1,7 +1,12 @@
 .align-right {
     text-align: right;
 }
-
+.dimmed {
+    color: lighten($color-black, 40%);
+}
+.dashed {
+    text-decoration: underline dotted;
+}
 .flex-grow {
     flex-grow: 1;
 }

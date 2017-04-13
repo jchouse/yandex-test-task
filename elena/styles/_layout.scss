@@ -3,4 +3,10 @@ body {
     font-size: $font-size-m;
     color: $color-text;
     background: lighten($color-black, 85%);
+
+    a,
+    a:visited,
+    a:active {
+        color: $color-link;
+    }
 }
