@@ -1,0 +1,33 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: $font-size-m;
+    color: $color-text;
+    background: lighten($color-black, 95%);
+
+    a,
+    a:visited,
+    a:active {
+        color: $color-link;
+    }
+
+    hr {
+        width: 100%;
+    }
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    .grid-item {
+        display: flex;
+        flex: 0 0 auto;
+        width: 100%;
+        padding: $grid-step;
+
+        &.__1-2 {
+            width: 50%;
+            flex-basis: 50%;
+        }
+    }
+}

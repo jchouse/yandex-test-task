@@ -1,0 +1,35 @@
+.progress {
+    position: relative;
+    width: 100%;
+    background: $color-white;
+    border-radius: $progress-bar-height;
+    height: $progress-bar-height;
+    box-shadow: inset -2px 1px 4px rgba($color-black, .2);
+    border: 1px solid rgba($color-black, .2);
+
+    &:before {
+        content: attr(data-value);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        font-size: $font-size-s;
+        text-align: center;
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    .progress-value {
+        height: 100%;
+        border-radius: $progress-bar-height;
+        background: linear-gradient(
+                        to bottom,
+                        lighten($color-accent, 30%) 2%,
+                        $color-accent 50%,
+                        adjust_hue(lighten($color-accent, 25%), 15deg) 90%,
+                        adjust_hue(lighten($color-accent, 5%), 15deg) 99%,
+                        adjust_hue($color-accent, 15deg) 100%
+        );
+    }
+}
