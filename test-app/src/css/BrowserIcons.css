@@ -1,0 +1,113 @@
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.wrapper :last-child{
+    margin-left: auto;
+}
+img {
+    font-family: 'Helvetica';
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+    height: auto;
+    display: block;
+    position: relative;
+    min-height: 50px;
+    margin: 3px;
+}
+
+
+img:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: calc(100% + 10px);
+    width: 100%;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+img:after {
+    content:  attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    color: rgb(100, 100, 100);
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#chrome:after {
+    color: green;
+    content:  attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#firefox:after {
+    color: orange;
+    content:  attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#opera:after{
+    color: red;
+    content:  attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#safari:after{
+    color: cornflowerblue;
+    content:  attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#ie:after{
+    color:dodgerblue;
+    content:  attr(alt);
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-family: FontAwesome;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    max-width: 100px;
+    line-height: 1em;
+    text-align: center;
+}
