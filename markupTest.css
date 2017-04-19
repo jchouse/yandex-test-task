@@ -1,0 +1,55 @@
+.rating {
+    overflow: hidden;
+    display: inline-block;
+}
+.star-input {
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+.rating-star {
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: url('star.png') 0 -16px;
+}
+.rating-star:hover,
+.rating-star:hover ~ .rating-star,
+.star-input:checked ~ .rating-star {
+    background-position: 0 0;
+}
+
+.progress {
+    height: 15px;
+    width: 250px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.29);
+    position: relative;
+    background: #fff;
+    border-radius: 13px;
+}
+.progress .bg {
+    border-radius: 13px;
+    background: #8ada2b;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+}
+
+.progress .current {
+    position: relative;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.test-part{
+    margin-top: 15px;
+}
+
+.button{
+    border-radius: 8px;
+    background-color: #f5f5f0;
+    float: left;
+    margin-left: 10px;
+}
+
