@@ -1,0 +1,75 @@
+.ui-btn
+  background: none
+  border: none
+  box-shadow: none
+  appearance: none
+  cursor: pointer
+  user-select: none
+  font-size: 16px
+  font-family: $baseFont
+  padding: 7px 12px
+  border-radius: 5px
+  border: 1px solid transparent
+  text-decoration none
+  transition: all $t150
+
+  &:focus,
+  &:active
+    outline-style: none
+
+  &:active
+    transform: scale(.98)
+
+  i
+    margin-right: 10px
+
+  &--disable
+    pointer-events: none
+    border-color: #ccc !important
+    color: #ccc !important
+    cursor: default !important
+    box-shadow: none !important
+    background: transparent !important
+
+    &:hover,
+    &:active
+      border-color: #ccc !important
+      color: #ccc !important
+      cursor: default !important
+      box-shadow: none !important
+      background: transparent !important
+
+  &--big
+    padding: 12px 26px
+
+  &--blank
+    padding: 0
+    border: none
+    border-radius: 0
+    align-items: center
+    display: flex
+
+  &--blue
+    color: #fff
+    background: $cBlue
+    box-shadow: 0 5px 18px 0 rgba(110, 188, 255, 0.6)
+
+    &:active,
+    &:hover
+      background: #2f92e6
+
+  &--grey
+    color: #fff
+    background: $cGrey
+
+    &:active,
+    &:hover
+      background: #5a5a5a
+
+  &--green
+    color: #fff
+    background: $cGreen
+
+    &:active,
+    &:hover
+      background: #33ca12

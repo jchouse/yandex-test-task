@@ -1,0 +1,44 @@
+$bMargin = 25px
+
+.ui-h1,
+.ui-h2,
+.ui-h3,
+.ui-h4
+  margin: 0
+  color: $cGrey
+  font-weight: normal
+
+.ui-h3
+  font-size: 24px
+  line-height: 26px
+  margin-bottom: $bMargin
+
+.ui-h4
+  font-size: 18px
+  margin-bottom: 15px
+
+.ui-pgh
+  margin: 0 0 $bMargin 0
+
+  &:last-child
+    margin-bottom: 0
+
+.ui-list
+  margin: 0
+  padding: 0
+  margin-bottom: 30px
+
+  &:last-child
+    margin-bottom: 0
+
+  li
+    list-style: none
+    position: relative
+
+    &:before
+      content: '—'
+      position: absolute
+      font-size: 11px
+      color: $cLGrey
+      left: -20px
+
