@@ -1,0 +1,24 @@
+$button-border-radius: 6px;
+$button-text-color: rgb(102, 102, 102);
+$button-font-size: 15px;
+$button-padding: 6px 24px;
+$button-margin: 6px;
+
+.button {
+  box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+  background: linear-gradient(rgb(249, 249, 249) 5%, rgb(233, 233, 233) 100%) rgb(249, 249, 249);
+  border-radius: $button-border-radius;
+  border: 1px solid rgb(220, 220, 220);
+  display: inline-block;
+  cursor: pointer;
+  color: $button-text-color;
+  font-weight: bold;
+  text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+  word-wrap: break-word;
+  font-size: $button-font-size;
+  padding: $button-padding;
+  margin: $button-margin;
+  &:hover {
+    background: linear-gradient(rgb(233, 233, 233) 5%, rgb(249, 249, 249) 100%) rgb(233, 233, 233);
+  }
+}

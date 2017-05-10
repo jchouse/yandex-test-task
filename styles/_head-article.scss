@@ -1,0 +1,18 @@
+.head-article {
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  &__header {
+    width: 50%;
+    font-size: $h1-font-size;
+    text-align: center;
+    transform: rotate(45deg);
+    color: orangered;
+  }
+
+  &__body {
+    width: 50%;
+    p {@include common-paragraph();}
+  }
+}

@@ -1,0 +1,61 @@
+$browser-icon-width: 130px;
+
+
+.browser-icons-container {
+  display: flex;
+  width: 100%;
+
+  .browser-icon {
+    width: $browser-icon-width;
+    position: relative;
+
+    .img-error-container {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: $browser-icon-width;
+      text-align: center;
+    }
+
+    img {
+      opacity: 0;
+    }
+    img + div.img-error-container {
+      opacity: 1;
+    }
+
+    img.img-loaded {
+      opacity: 1;
+    }
+    img.img-loaded + div.img-error-container {
+      opacity: 0;
+    }
+  }
+
+  .browser-icon.i_explorer {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  .chrome .img-error-container{
+    color: red;
+    span:first-child {
+      color: green;
+    }
+    span:last-child {
+      color: yellow;
+    }
+  }
+  .firefox .img-error-container{
+    color: darkred;
+  }
+  .safari .img-error-container{
+    color: steelblue;
+  }
+  .opera .img-error-container{
+    color: darkred;
+  }
+  .i_explorer .img-error-container{
+    color: steelblue;
+  }
+}

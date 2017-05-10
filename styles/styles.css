@@ -1,0 +1,153 @@
+@charset "UTF-8";
+html, body, div, span, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, Geneva, sans-serif; }
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap; }
+  .main-container .row, .main-container .row-centered {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center; }
+  .main-container .row-centered {
+    justify-content: center; }
+
+.head-article {
+  display: flex;
+  width: 100%;
+  align-items: center; }
+  .head-article__header {
+    width: 50%;
+    font-size: 36px;
+    text-align: center;
+    transform: rotate(45deg);
+    color: orangered; }
+  .head-article__body {
+    width: 50%; }
+    .head-article__body p {
+      font-size: 20px;
+      line-height: 1.1;
+      text-indent: 20px;
+      margin: 10px 0; }
+
+.footer-article {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap; }
+  .footer-article__header {
+    width: 50%;
+    font-size: 36px; }
+  .footer-article__body {
+    width: 100%;
+    column-count: 2;
+    column-gap: 100px; }
+    .footer-article__body p {
+      font-size: 20px;
+      line-height: 1.1;
+      text-indent: 20px;
+      margin: 10px 0; }
+    .footer-article__body ul {
+      list-style: none;
+      padding: 0;
+      font-size: 20px; }
+      .footer-article__body ul li:before {
+        content: "—"; }
+      .footer-article__body ul .text-dotted {
+        text-decoration: underline dotted; }
+
+.score-control-wrap input {
+  display: none; }
+  .score-control-wrap input:checked ~ label {
+    color: #fdb010; }
+  .score-control-wrap input:not(:checked) ~ label:hover, .score-control-wrap input:not(:checked) ~ label:hover ~ label {
+    color: #fdb010; }
+.score-control-wrap label {
+  float: right;
+  color: #7a7a7a;
+  cursor: pointer; }
+  .score-control-wrap label:before {
+    content: "★";
+    font-size: 28px;
+    display: inline-block; }
+
+.progress-bar-control-wrap {
+  position: relative;
+  width: 50%;
+  background: white;
+  border-radius: 20px;
+  height: 20px;
+  border: 1px solid #bfbfbf; }
+  .progress-bar-control-wrap:before {
+    content: attr(data-value);
+    position: absolute;
+    font-size: 16px;
+    text-align: center;
+    width: 100%; }
+  .progress-bar-control-wrap .initial-progress {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #299a0b 0%, #00d535 100%); }
+
+.button {
+  box-shadow: white 0px 1px 0px 0px inset;
+  background: linear-gradient(#f9f9f9 5%, #e9e9e9 100%) #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid gainsboro;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-weight: bold;
+  text-shadow: white 0px 1px 0px;
+  word-wrap: break-word;
+  font-size: 15px;
+  padding: 6px 24px;
+  margin: 6px; }
+  .button:hover {
+    background: linear-gradient(#e9e9e9 5%, #f9f9f9 100%) #e9e9e9; }
+
+.browser-icons-container {
+  display: flex;
+  width: 100%; }
+  .browser-icons-container .browser-icon {
+    width: 130px;
+    position: relative; }
+    .browser-icons-container .browser-icon .img-error-container {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 130px;
+      text-align: center; }
+    .browser-icons-container .browser-icon img {
+      opacity: 0; }
+    .browser-icons-container .browser-icon img + div.img-error-container {
+      opacity: 1; }
+    .browser-icons-container .browser-icon img.img-loaded {
+      opacity: 1; }
+    .browser-icons-container .browser-icon img.img-loaded + div.img-error-container {
+      opacity: 0; }
+  .browser-icons-container .browser-icon.i_explorer {
+    flex-grow: 1;
+    text-align: right; }
+  .browser-icons-container .chrome .img-error-container {
+    color: red; }
+    .browser-icons-container .chrome .img-error-container span:first-child {
+      color: green; }
+    .browser-icons-container .chrome .img-error-container span:last-child {
+      color: yellow; }
+  .browser-icons-container .firefox .img-error-container {
+    color: darkred; }
+  .browser-icons-container .safari .img-error-container {
+    color: steelblue; }
+  .browser-icons-container .opera .img-error-container {
+    color: darkred; }
+  .browser-icons-container .i_explorer .img-error-container {
+    color: steelblue; }
+
+/*# sourceMappingURL=styles.css.map */

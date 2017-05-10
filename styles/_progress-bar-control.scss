@@ -1,0 +1,30 @@
+$progress-bar-background-color: white;
+$progress-bar-width: 50%;
+$progress-bar-height: 20px;
+$progress-bar-radius: 20px;
+$progress-bar-font-size: 16px;
+$progress-bar-border-color: #bfbfbf;
+
+.progress-bar-control-wrap {
+  position: relative;
+  width: $progress-bar-width;
+  background: $progress-bar-background-color;
+  border-radius: $progress-bar-radius;
+  height: $progress-bar-height;
+  border: 1px solid $progress-bar-border-color;
+
+  &:before {
+    content: attr(data-value);
+    position: absolute;
+    font-size: $progress-bar-font-size;
+    text-align: center;
+    width: 100%;
+  }
+
+  .initial-progress {
+    width: 50%;
+    height: 100%;
+    border-radius: $progress-bar-radius;
+    background: linear-gradient(-45deg, #299a0b 0%,#00d535 100%);
+  }
+}

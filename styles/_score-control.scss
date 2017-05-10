@@ -1,0 +1,28 @@
+$score-color-star: #7a7a7a;
+$score-color-star-marked: #fdb010;
+$score-star-size: 28px;
+
+.score-control-wrap {
+  input {
+    display: none;
+    &:checked ~ label {
+      color: $score-color-star-marked;
+    }
+    &:not(:checked) ~ label:hover,
+    &:not(:checked) ~ label:hover ~ label {
+      color: $score-color-star-marked;
+    }
+  }
+
+  label {
+    float: right;
+    color: $score-color-star;
+    cursor: pointer;
+
+    &:before {
+      content: "★";
+      font-size: $score-star-size;
+      display: inline-block;
+    }
+  }
+}
