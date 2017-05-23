@@ -1,0 +1,58 @@
+.icons-list {
+  display: flex;
+  width: 100%;
+
+  .icon {
+    width: 120px;
+    position: relative;
+
+    .icon__broken {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 120px;
+      text-align: center;
+    }
+
+    img {
+      opacity: 0;
+    }
+    img + div.icon__broken {
+      opacity: 1;
+    }
+
+    img.icon__loaded {
+      opacity: 1;
+    }
+    img.icon__loaded + div.icon__broken {
+      opacity: 0;
+    }
+  }
+
+  .icon.ie {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  .chrome .icon__broken {
+    color: red;
+    span:first-child {
+      color: green;
+    }
+    span:last-child {
+      color: yellow;
+    }
+  }
+  .firefox .icon__broken {
+    color: red;
+  }
+  .safari .icon__broken {
+    color: lightblue;
+  }
+  .opera .icon__broken {
+    color: red;
+  }
+  .ie .icon__broken {
+    color: lightblue;
+  }
+}

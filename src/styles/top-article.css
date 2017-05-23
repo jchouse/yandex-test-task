@@ -1,0 +1,62 @@
+/*
+Syntax error: Invalid CSS after "  &": expected "{", was "__header {"
+              
+              "__header" may only be used at the beginning of a compound selector.
+        on line 7 of top-article.scss
+
+2:   display: flex;
+3:   flex-wrap: wrap;
+4:   width: 100%;
+5:   align-items: center;
+6: 
+7:   &__header {
+8:     color: mediumblue;
+9:   }
+10: 
+11:   &__body {
+12:     p {
+
+Backtrace:
+top-article.scss:7
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1147:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:692:in `block in simple_selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1095:in `throw_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:692:in `simple_selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:640:in `_selector'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:619:in `selector'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:603:in `selector_sequence'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:528:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:591:in `block in declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1105:in `block in catch_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1105:in `catch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:1105:in `catch_error'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:554:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:529:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:543:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:443:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.2.19/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:23:in `load'
+/usr/local/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"  &\": expected \"{\", was \"__header {\"\A               \A               \"__header\" may only be used at the beginning of a compound selector.\A         on line 7 of top-article.scss\A \A 2:   display: flex;\A 3:   flex-wrap: wrap;\A 4:   width: 100%;\A 5:   align-items: center;\A 6: \A 7:   &__header {\A 8:     color: mediumblue;\A 9:   }\A 10: \A 11:   &__body {\A 12:     p {"; }

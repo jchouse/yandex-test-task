@@ -1,0 +1,21 @@
+.top_article {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  font-family: Arial,sans-serif;
+
+  &__header {
+    color: mediumblue;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    box-shadow: 0 0 4px 0 grey;
+    padding: 20px;
+    margin: 10px 0 20px 0;
+    p {
+      font-size: 14px;
+    }
+  }
+}

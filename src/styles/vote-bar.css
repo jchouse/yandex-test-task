@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.vote-bar input {
+  display: none; }
+  .vote-bar input:checked ~ label {
+    color: #FFC31E; }
+  .vote-bar input:not(:checked) ~ label:hover, .vote-bar input:not(:checked) ~ label:hover ~ label {
+    color: #FF8418; }
+.vote-bar label {
+  float: right;
+  color: grey;
+  cursor: pointer; }
+  .vote-bar label:after {
+    content: "★";
+    font-size: 24px;
+    display: inline-block; }

@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  padding: 8px 22px;
+  border: 1px solid #C9C9C9;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  word-wrap: break-word;
+  background: linear-gradient(rgb(255, 255, 255) 5%, rgb(240, 240, 240) 100%) rgb(255, 255, 255);
+  color: #6F6F6F;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background: linear-gradient(rgb(240, 240, 240) 5%, rgb(249, 249, 249) 100%) rgb(240, 240, 240);
+  }
+}

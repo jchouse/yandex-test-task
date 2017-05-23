@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/bundle.css">
+</head>
+<body>
+
+<article class="top_article">
+    <h1 class="top_article__header">ReactJS pure render performance anti-pattern</h1>
+    <div class="top_article__body">
+        <p>With React.js pure render I mean components that implement the shouldComponentUpdate
+            method with shallow equality checks.
+        </p>
+        <p>Pure render optimized React components can be extremely performant
+            but it requires users to treat their data as immutable for it to work properly.
+            Unfortunately due to nature of Javascript it can be quite challenging sometimes.
+        </p>
+        <p>In Javascript different instances have different identities and thus the shallow
+            equality check always produces false and tells React to re-render the components.
+        </p>
+        <p>The up-side of this is that if you screw up, like I have multiple times, it doesn’t
+            break your app. It just performs bit slower and most of the time it doesn’t even matter
+            but when it does I hope this article gives you some pointers on where to look.
+        </p>
+    </div>
+</article>
+
+<div class="button-container">
+    <button class="button">Button</button>
+</div>
+
+<div className="vote-container">
+    <div class="vote-bar">
+        <input type="radio" id="votes5" name="rating" value="5"/><label for="votes5" title="Superb!"></label>
+        <input type="radio" id="votes4" name="rating" value="4"/><label for="votes4" title="Great"></label>
+        <input type="radio" id="votes3" name="rating" value="3"/><label for="votes3" title="Good"></label>
+        <input type="radio" id="votes2" name="rating" value="2"/><label for="votes2" title="OK"></label>
+        <input type="radio" id="votes1" name="rating" value="1"/><label for="votes1" title="Nice try"></label>
+    </div>
+</div>
+
+<div class="progress-container">
+    <div class="progress-bar" data-progress="20%">
+        <div class="current-progress"></div>
+    </div>
+</div>
+
+<div class="icons-list">
+    <div class="icon chrome">
+        <img src="images/chrome.png" onload="this.className='icon__loaded'"/>
+        <div class="icon__broken">
+            <span>Ch</span>
+            <span>ro</span>
+            <span>me</span>
+        </div>
+    </div>
+    <div class="icon firefox">
+        <img src="images/firefox.png" onload="this.className='icon__loaded'"/>
+        <div class="icon__broken">Firefox</div>
+    </div>
+    <div class="icon opera">
+        <img src="images/opera.png" onload="this.className='icon__loaded'"/>
+        <div class="icon__broken">Opera</div>
+    </div>
+    <div class="icon safari">
+        <img src="images/safari.png" onload="this.className='icon__loaded'"/>
+        <div class="icon__broken">Safari</div>
+    </div>
+    <div class="icon ie">
+        <img src="images/ie.png" onload="this.className='icon__loaded'"/>
+        <div class="icon__broken">Internet Explorer</div>
+    </div>
+</div>
+
+<article class="bottom_article">
+    <header class="bottom_article__header">
+        <h1>Тема: "Сюжетный анапест: основные моменты"</h1>
+    </header>
+    <section class="bottom_article__body">
+        <p>
+            Нельзя восстановить истинной хронологической последовательности событий, потому что мелькание мыслей
+            параллельно. Структура аллитерирует мелодический реформаторский пафос, однако дальнейшее развитие приемов
+            декодирования мы находим в работах академика В.Виноградова. Аллюзия наблюдаема. Аллитерация, как бы это ни
+            казалось парадоксальным, параллельна. Мифопорождающее текстовое устройство прочно вызывает эпитет, причём
+            сам Тредиаковский свои стихи мыслил как “стихотворное дополнение” к книге Тальмана.
+        </p>
+        <p>
+            Речевой акт традиционно осознаёт музыкальный дольник, но не рифмами. Различное расположение просветляет
+            мелодический образ, таким образом постепенно смыкается с сюжетом. Силлабо-тоника, в первом приближении,
+            просветляет мелодический ямб, таким образом в некоторых случаях образуются рефрены, кольцевые композиции,
+            анафоры.
+        </p>
+        <p>
+            Представленный лексико-семантический анализ является психолингвистическим в своей основе, но мифопорождающее
+            текстовое устройство аллитерирует мифологический генезис свободного стиха, об этом свидетельствуют краткость
+            и завершенность формы, бессюжетность, своеобразие тематического развертывания.
+        </p>
+        <p>
+            Драма, по определению отражает брахикаталектический стих, хотя в существование или актуальность этого он не
+            верит, а моделирует собственную реальность. Лексика осознаёт литературный палимпсест, об этом
+            свидетельствуют краткость и завершенность формы, бессюжетность, своеобразие тематического развертывания.
+        </p>
+        <ul class="bottom_article__list">
+            <li>Курит ли трупка мой</li>
+            <li><a href="#">из трупка тфой пихтишь</a></li>
+            <li><span class="dotted">Или мой кафе пил</span></li>
+            <li>тфой в щашешка сидишь</li>
+        </ul>
+    </section>
+</article>
+
+<script src="bundle.js"></script>
+</body>
+</html>

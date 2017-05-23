@@ -1,0 +1,60 @@
+.progress-bar {
+  position: relative;
+  width: 20%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  height: 14px;
+  border: 1px solid #bfbfbf;
+
+
+    &[data-progress="10%"] {
+      .current-progress {
+        width: 10%;
+      }
+    }
+
+    &[data-progress="20%"] {
+      .current-progress {
+        width: 20%;
+      }
+    }
+
+    &[data-progress="30%"] {
+      .current-progress {
+        width: 30%;
+      }
+    }
+
+    &[data-progress="40%"] {
+      .current-progress {
+        width: 40%;
+      }
+    }
+
+    &[data-progress="50%"] {
+      .current-progress {
+        width: 50%;
+      }
+    }
+
+    &[data-progress="100%"] {
+      .current-progress {
+        width: 100%;
+      }
+    }
+
+    &:before {
+      content: attr(data-progress);
+      position: absolute;
+      font-size: 12px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .current-progress {
+      width: 0;
+      height: 100%;
+      border-radius: 10px;
+      background: linear-gradient(-45deg, #3d9a00 0%, #75d559 100%);
+    }
+} 

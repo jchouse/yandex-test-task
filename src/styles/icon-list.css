@@ -1,0 +1,37 @@
+.icons-list {
+  display: flex;
+  width: 100%; }
+  .icons-list .icon {
+    width: 120px;
+    position: relative; }
+    .icons-list .icon .img-error-container {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 120px;
+      text-align: center; }
+    .icons-list .icon img {
+      opacity: 0; }
+    .icons-list .icon img + div.img-error-container {
+      opacity: 1; }
+    .icons-list .icon img.img-loaded {
+      opacity: 1; }
+    .icons-list .icon img.img-loaded + div.img-error-container {
+      opacity: 0; }
+  .icons-list .icon.i_explorer {
+    flex-grow: 1;
+    text-align: right; }
+  .icons-list .chrome .img-error-container {
+    color: red; }
+    .icons-list .chrome .img-error-container span:first-child {
+      color: green; }
+    .icons-list .chrome .img-error-container span:last-child {
+      color: yellow; }
+  .icons-list .firefox .img-error-container {
+    color: darkred; }
+  .icons-list .safari .img-error-container {
+    color: steelblue; }
+  .icons-list .opera .img-error-container {
+    color: darkred; }
+  .icons-list .i_explorer .img-error-container {
+    color: steelblue; }
