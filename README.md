@@ -32,4 +32,4 @@
 
 ![columns](http://img-fotki.yandex.ru/get/4714/2776.b/0_60613_ce753157_orig)
 
-__PSD файл задания__: https://yadi.sk/i/GHK7Ohd93GVGVy
+__PSD файл задания__: смотрите в дирректории
